@@ -15,3 +15,6 @@ jobs:
 
       - name: Build & Test
         run: swift test
+      - name: Run sample client
+        run: swift run DebugLogger
+
