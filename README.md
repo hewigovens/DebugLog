@@ -1,5 +1,8 @@
 # DebugLog
 
+[![CI](https://github.com/hewigovens/DebugLog/actions/workflows/ci.yml/badge.svg)](https://github.com/hewigovens/DebugLog/actions/workflows/ci.yml)
+[![Swift Package Manager](https://img.shields.io/badge/SPM-compatible-brightgreen.svg)](Package.swift)
+
 Tiny Swift macro package that turns `#debugLog(...)` invocations into `print` statements that include the originating `#fileID` and `#line`. The macro expansion is wrapped in `#if DEBUG`, so it only emits logs in debug builds and compiles away everywhere else.
 
 ## Targets & Usage
