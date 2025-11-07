@@ -63,3 +63,5 @@ You can also run the tiny demo client to see both macros in action:
 ```bash
 swift run DebugLogger
 ```
+
+> **Tip:** When consuming this package, avoid forcing `xcodebuild -sdk iphonesimulator`; the macro plugin cannot load in that configuration. Drop the explicit SDK flag (or build for the default destination) instead.
