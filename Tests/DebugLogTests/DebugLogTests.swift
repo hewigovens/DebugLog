@@ -10,7 +10,7 @@ import DebugLogMacros
 
 let testMacros: [String: Macro.Type] = [
     "debugLog": DebugLogMacro.self,
-    "osDebugLog": OSLogDebugMacro.self,
+    "osDebugLog": DebugLogOSLogMacro.self,
 ]
 #endif
 

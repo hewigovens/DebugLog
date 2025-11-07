@@ -7,5 +7,5 @@ public macro osDebugLog(
     category: String = "default"
 ) = #externalMacro(
     module: "DebugLogMacros",
-    type: "OSLogDebugMacro"
+    type: "DebugLogOSLogMacro"
 )

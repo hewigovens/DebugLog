@@ -22,7 +22,7 @@ public struct DebugLogMacro: ExpressionMacro {
     }
 }
 
-public struct OSLogDebugMacro: ExpressionMacro {
+public struct DebugLogOSLogMacro: ExpressionMacro {
     public static func expansion(
         of node: some FreestandingMacroExpansionSyntax,
         in context: some MacroExpansionContext
@@ -59,6 +59,6 @@ public struct OSLogDebugMacro: ExpressionMacro {
 struct DebugLogPlugin: CompilerPlugin {
     let providingMacros: [Macro.Type] = [
         DebugLogMacro.self,
-        OSLogDebugMacro.self,
+        DebugLogOSLogMacro.self,
     ]
 }

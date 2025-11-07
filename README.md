@@ -23,9 +23,9 @@ The macro expands to:
 }()
 ```
 
-### `OSLogDebug` (Unified Logging)
+### `DebugLogOSLog` (Unified Logging)
 
-If you prefer the unified logging system, depend on and import `OSLogDebug` instead. Use `#osDebugLog`:
+If you prefer the unified logging system, depend on and import `DebugLogOSLog` instead. Use `#osDebugLog`:
 
 ```swift
 #osDebugLog("Network response", subsystem: "com.acme.app", category: "networking")
@@ -61,5 +61,5 @@ If you tweak the emitted code (e.g., to add timestamps or different formatting),
 You can also run the tiny demo client to see both macros in action:
 
 ```bash
-swift run DebugLogClient
+swift run DebugLogger
 ```
