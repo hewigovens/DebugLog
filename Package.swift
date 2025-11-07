@@ -12,8 +12,8 @@ let package = Package(
             targets: ["DebugLog"]
         ),
         .library(
-            name: "OSLogDebugMacro",
-            targets: ["OSLogDebugMacro"]
+            name: "OSLogDebug",
+            targets: ["OSLogDebug"]
         ),
         .executable(
             name: "DebugLogClient",
@@ -37,13 +37,13 @@ let package = Package(
             dependencies: ["DebugLogMacros"]
         ),
         .target(
-            name: "OSLogDebugMacro",
+            name: "OSLogDebug",
             dependencies: ["DebugLogMacros"]
         ),
 
         .executableTarget(
             name: "DebugLogClient",
-            dependencies: ["DebugLog", "OSLogDebugMacro"]
+            dependencies: ["DebugLog", "OSLogDebug"]
         ),
 
         .testTarget(

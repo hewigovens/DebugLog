@@ -1,5 +1,5 @@
 import DebugLog
-import OSLogDebugMacro
+import OSLogDebug
 
 let sampleUsernames = ["ana", "ben", "cora"]
 #debugLog("Loaded \(sampleUsernames.count) users: \(sampleUsernames)")
